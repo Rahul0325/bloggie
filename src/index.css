@@ -17,14 +17,15 @@ code {
 
 .card {
   border: 1px solid white;
-  margin: 10px;
-  width: 15rem;
-  height: 15rem;
+  max-width: 16rem;
+  max-height: 16rem;
   display: flex;
   flex-direction: column;
   background-color: #f4f4f4;
   box-shadow: 1px 1px #bfbbbbab;
   border-radius: 15px;
+  margin-right: 2rem;
+  margin-top: 1rem;
 }
 
 .mainSection {
@@ -35,6 +36,7 @@ code {
 }
 
 .coverPicture {
+  overflow: hidden;
   height: 50%;
 }
 
@@ -83,4 +85,21 @@ img {
   max-width: 100%;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+}
+
+.section {
+  display: flex;
+  flex: 6;
+  flex-direction: column;
+}
+
+.sectionArticles {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.sectionTitle {
+  font-weight: bold;
+  font-size: 20px;
 }

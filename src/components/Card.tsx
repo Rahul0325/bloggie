@@ -1,23 +1,20 @@
 import React from "react";
+import { Article } from "../models/Article";
 
 type Props = {
-  coverPictureUrl: string;
-  title: string;
-  readTime: string;
-  author: string;
-  date: string;
+  article: Article;
 };
 
 export const Card: React.FC<Props> = (props) => {
   return (
     <div className="card">
       <div className="coverPicture">
-        <img src={props.coverPictureUrl}></img>
+        <img src={props.article.coverImageUrl}></img>
       </div>
       <div className="contentSection">
-        <div className="author">{props.author}</div>
-        <div className="title">{props.title}</div>
-        <div className="date">{props.date}</div>
+        <div className="author">{props.article.Author}</div>
+        <div className="title">{props.article.Title}</div>
+        <div className="date">{props.article.date}</div>
       </div>
     </div>
   );
