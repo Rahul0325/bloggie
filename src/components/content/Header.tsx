@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Icon } from "../shared";
 
 type HeaderProps = {
@@ -5,6 +6,12 @@ type HeaderProps = {
 };
 
 export const Header: React.FC<HeaderProps> = (props) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/");
+  };
+
   return (
     <div className="header">
       <Icon
@@ -12,7 +19,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
         iconPath="/assets/left-chevron.png"
         altText="Go back button"
         onClick={() => {
-          console.log("should go back");
+          handleClick();
         }}
       />
 

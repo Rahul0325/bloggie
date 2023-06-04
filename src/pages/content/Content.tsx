@@ -7,7 +7,7 @@ import {
 } from "../../components/content";
 import "../../index.css";
 
-export const Content = () => {
+export const Content: React.FC = () => {
   return (
     <ContentWrapper>
       <CoverPicture pictureUrl="https://i.pinimg.com/474x/30/5c/5a/305c5a457807ba421ed67495c93198d3--cover-pics-cover-art.jpg" />
