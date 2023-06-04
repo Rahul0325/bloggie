@@ -36,6 +36,29 @@ code {
   border-radius: 15px;
   margin-right: 2rem;
   margin-top: 1rem;
+  background-color: #0d2f45ff;
+  color: mintcream;
+}
+
+.Home .card:hover {
+  animation-name: cardHoverAnimation;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cardHoverAnimation {
+  from {
+    background-color: #0d2f45ff;
+    color: mintcream;
+    transform: scale3d(1.0, 1.0, 1);
+
+  }
+  to {
+    background-color: mintcream;
+    color: #0d2f45ff;
+    box-shadow: 10px 10px 5px #bfbbbbab;
+    transform: scale3d(1.05, 1.05, 1);
+  }
 }
 
 .Home .mainSection {
@@ -68,11 +91,12 @@ code {
   justify-content: space-evenly;
   align-content: flex-start;
   flex: 1;
-  background-color: #0d2f45ff;
+  /* background-color: #0d2f45ff; */
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  color: mintcream
+  /* color: mintcream; */
 }
+
 
 .Home {
   display: flex;
@@ -137,6 +161,7 @@ code {
     background: #0d2f45ff;
     color: #dae7e3ff
 }
+
 
 .content .header-title {
   font-size: 20px;
