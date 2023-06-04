@@ -9,7 +9,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
     <div className="header">
       <Icon
         class="go-back"
-        iconPath="/assets/left.png"
+        iconPath="/assets/left-chevron.png"
         altText="Go back button"
         onClick={() => {
           console.log("should go back");

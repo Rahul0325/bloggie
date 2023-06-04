@@ -11,6 +11,8 @@
 body {
   margin: 0;
   font-family: 'Comme', sans-serif;
+  color: #000022ff;
+  background-color: #dae7e3ff;
 }
 
 code {
@@ -30,10 +32,11 @@ code {
     justify-content: space-between;
     position: sticky;
     top: 0px;
-    border: 1px solid turquoise;
+    border: 1px solid #0d2f45ff;
     padding: 2rem;
     margin-bottom: 0.5rem;
-    background: turquoise;
+    background: #0d2f45ff;
+    color: #dae7e3ff
 }
 
 .content .header-title {
@@ -44,11 +47,6 @@ code {
 .content .go-back img {
   height: 1.5rem;
   width: auto;
-}
-
-.content .go-back img:hover {
-  box-shadow: 2px 2px grey;
-  border-radius: 10px;
 }
 
 .content .cover {
@@ -101,7 +99,7 @@ code {
 
 .content .divider {
   border-width: 10px;
-  border: 1px solid black;
+  border: 1px solid #000022ff;
   max-width: 100%;
 }
 
@@ -119,5 +117,6 @@ code {
   font-weight: bold;
   text-align: end;
   padding: 2rem;
-  background: turquoise;
+  background: #0d2f45ff;
+  color: #dae7e3ff;
 }
