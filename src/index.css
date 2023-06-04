@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
 
+/* Color Pallete: 
+--mint-cream: #dae7e3ff;
+--medium-slate-blue: #746eedff;
+--oxford-blue: #000022ff;
+--coral: #fe9072ff;
+--prussian-blue: #0d2f45ff;
+*/
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,6 +16,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: Montserrat;
+  color: #000022ff;
+  background-color: #dae7e3ff;
 }
 
 code {
@@ -107,4 +117,105 @@ code {
   font-weight: bold;
   font-size: 20px;
   color: #000022ff;
+}
+
+.content {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+}
+
+.content .header {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    border: 1px solid #0d2f45ff;
+    padding: 2rem;
+    margin-bottom: 0.5rem;
+    background: #0d2f45ff;
+    color: #dae7e3ff
+}
+
+.content .header-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content .go-back img {
+  height: 1.5rem;
+  width: auto;
+}
+
+.content .cover {
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+.content .cover-picture {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.content .cover-picture img {
+  height: 25rem;
+  width: auto;
+}
+
+.content .background-picture {
+  grid-row: 1;
+  grid-column: 1;
+  z-index: -1;
+  width: 100%;
+}
+
+.content .background-picture img {
+  height: 25rem;
+  width: 100%;
+  filter: blur(7px);
+}
+
+.content .title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  margin-left: 25%;
+}
+
+.content .subtitle {
+  font-size: 15px;
+  font-weight: 100;
+  text-align: end;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  align-self: flex-end;
+  margin-right: 25%;
+  font-style: italic
+}
+
+.content .divider {
+  border-width: 10px;
+  border: 1px solid #000022ff;
+  max-width: 100%;
+}
+
+.content .body {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 1rem;
+  text-align: justify;
+  padding: 1rem;
+  min-height: 30rem;
+}
+
+.content .footer {
+  font-size: large;
+  font-weight: bold;
+  text-align: end;
+  padding: 2rem;
+  background: #0d2f45ff;
+  color: #dae7e3ff;
 }
