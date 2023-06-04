@@ -1,8 +1,6 @@
 import React from "react";
-import { Card } from "../components/Card";
-import { FilterSection } from "../components/FilterSection";
-import { Section } from "../components/Section";
-import { Article } from "../models/Article";
+import { Article } from "../../models/home";
+import { FilterSection, Section } from "../../components/home";
 
 const articles: Article[] = [
   {
@@ -48,10 +46,10 @@ export const Home: React.FC = () => {
       <FilterSection
         title="Menu"
         filterOptions={["Tech", "Art", "Movies", "Shows"]}
-      ></FilterSection>
+      />
       <div className="mainContent">
-        <Section title="Latest in Tech" articles={articles}></Section>
-        <Section title="Latest in Movies" articles={articles}></Section>
+        <Section title="Latest in Tech" articles={articles} />
+        <Section title="Latest in Movies" articles={articles} />
       </div>
     </div>
   );

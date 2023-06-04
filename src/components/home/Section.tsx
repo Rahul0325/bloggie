@@ -1,5 +1,5 @@
 import React from "react";
-import { Article } from "../models/Article";
+import { Article } from "../../models/home";
 import { Card } from "./Card";
 
 type Props = {
@@ -13,7 +13,7 @@ export const Section: React.FC<Props> = (props) => {
       <div className="sectionTitle">{props.title}</div>
       <div className="sectionArticles">
         {props.articles.map((article) => (
-          <Card article={article}></Card>
+          <Card article={article} />
         ))}
       </div>
     </div>

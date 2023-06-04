@@ -1,10 +1,9 @@
-import { Home } from "./pages/Home";
-import { Content } from "./pages";
+import { Content, Home } from "./pages";
 
 function App() {
   return (
     <div className="App">
-      <Home></Home>
+      <Home />
       <Content />
     </div>
   );

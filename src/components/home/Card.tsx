@@ -1,5 +1,5 @@
 import React from "react";
-import { Article } from "../models/Article";
+import { Article } from "../../models/home";
 
 type Props = {
   article: Article;
