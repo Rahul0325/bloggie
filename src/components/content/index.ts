@@ -4,3 +4,4 @@ export * from './Footer';
 export * from './Title';
 export * from './Body'; 
 export * from './ContentWrapper';
+export * from './Subtitle';

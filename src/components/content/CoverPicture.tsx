@@ -7,8 +7,17 @@ type CoverPictureProps = {
 
 export const CoverPicture: React.FC<CoverPictureProps> = (props) => {
   return (
-    <div className="cover-picture">
-      <Icon iconPath={props.pictureUrl} altText="Cover Picture" />
+    <div className="cover">
+      <Icon
+        iconPath={props.pictureUrl}
+        altText="Cover Picture"
+        class="cover-picture"
+      />
+      <Icon
+        iconPath={props.pictureUrl}
+        altText="Background Picture"
+        class="background-picture"
+      />
     </div>
   );
 };
